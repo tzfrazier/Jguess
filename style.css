@@ -1,2 +1,18 @@
-div
-{display:none;}
+main div{
+  width: 30em;
+  height: 3em;
+  padding: 1em 0em 1em 1.25em;
+  display: block;
+}
+/*.msg{
+  display:none;}*/
+.diplaymsg{
+}
+#low, #high {
+  background-color: red;
+  color: white;
+}
+#correct {
+  background-color: green;
+  color: white;
+}
