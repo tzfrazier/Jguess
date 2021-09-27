@@ -4,9 +4,10 @@ main div{
   padding: 1em 0em 1em 1.25em;
   display: block;
 }
-/*.msg{
-  display:none;}*/
+.msg{
+  display:none;}
 .diplaymsg{
+  display:block;
 }
 #low, #high {
   background-color: red;

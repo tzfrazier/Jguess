@@ -1,15 +1,25 @@
 // Generate and store a random int
-let RandomNum //code for generating a random number
-
-//code to take in input
-var Guess //
-// check guess against that number
+let randomNum = Math.floor(Math.random() * 10 +1 ); //code for generating a random number
 
 
-  if (RandomNum == Guess){
+
+function checkguess() {
+  var guess = document.getElementById("guessNo").value ;
+  function hideitall() {
+    document.getElementByClass('displaymsg');
+  }
+  function evaluateGuess {
+  if (randomNum == guess){
     //display winning message
-  } else if (RandomNum < Guess){
+  } else if (randomNum < guess){
     //display too high msg
-  } else if (RandomNum > Guess)  {
+  } else if (randomNum > guess)  {
     //display too low msg
   }
+  hideitall
+  evaluateGuess
+}
+
+onclick.checkguess
+
+//
