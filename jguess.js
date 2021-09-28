@@ -5,21 +5,25 @@ let randomNum = Math.floor(Math.random() * 10 +1 ); //code for generating a rand
 
 function checkguess() {
   var guess = document.getElementById("guessNo").value ;
+
+
   function hideitall() {
-    document.getElementByClass('displaymsg');
+    document.querySelector('.displaymsg').setAttribute("class", "msg");
   }
-  function evaluateGuess {
-  if (randomNum == guess){
-    //display winning message
-  } else if (randomNum < guess){
-    //display too high msg
-  } else if (randomNum > guess)  {
-    //display too low msg
+
+  function evaluateGuess() {
+    if (randomNum == guess){
+      document.getElementById('correct').setAttribute("class", "displaymsg");
+    } else if (randomNum < guess){
+      document.getElementById('high').setAttribute("class", "displaymsg");
+    } else if (randomNum > guess)  {
+      document.getElementById('low').setAttribute("class", "displaymsg");
+    }
   }
-  hideitall
-  evaluateGuess
+  hideitall();
+  evaluateGuess();
 }
 
-onclick.checkguess
+
 
 //
