@@ -1,14 +1,22 @@
-// Generate and store a random int
+/*
+* variable area
+*/
 let randomNum = Math.floor(Math.random() * 10 +1 ); //code for generating a random number
+var guess = document.getElementById("guessNo").value; //code for storing the guess
+const btn = document.querySelector('button'); //Code to store the button element for event
 
+/*
+* Function Junction
+*/
 
-
-function checkguess() {
-  var guess = document.getElementById("guessNo").value ;
-
-
+function checkGuess() {
   function hideitall() {
-    document.querySelector('.displaymsg').setAttribute("class", "msg");
+    if (document.querySelector('.displaymsg') != null ) {
+      document.querySelector('.displaymsg').setAttribute("class", "msg");
+
+      } else {
+        console.log(guess)
+      }
   }
 
   function evaluateGuess() {
@@ -23,7 +31,13 @@ function checkguess() {
   hideitall();
   evaluateGuess();
 }
-
+/*
+* Event
+*/
+btn.onclick = function(){
+  guess = document.getElementById("guessNo").value; //updates to teh current guess
+  checkGuess();
+}
 
 
 //
